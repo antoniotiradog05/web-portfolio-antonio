@@ -3,70 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio David | Portfolio Profesional</title>
+    <title>Antonio Tirado | Junior Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="hero">
-        <div class="container">
-            <div class="avatar-iniciales">AD</div>
-            <h1>Hola, soy Antonio David 👋</h1>
-            <p>Estudiante de 2º año de DAW en MEDAC | Especialista en Sistemas (SMR)</p>
-            <a href="#contacto" class="btn">Contactar conmigo</a>
+        <nav class="navbar">
+            <div class="logo">AT.</div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificaciones">Certificaciones</a></li>
+            </ul>
+        </nav>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="tagline">Hola, soy Antonio Tirado 👋</p>
+                <h1>Junior Full Stack Developer</h1>
+                <h2 class="subtitle">Backend Java (Spring Boot) | Frontend Web (React)</h2>
+                <p class="bio-short">Desarrollador con mentalidad técnica sólida y base en sistemas. Aplicando principios Clean Code y diseño de arquitecturas escalables.</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="https://www.linkedin.com/in/antonio-tirado7/" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="sobre-mi">
+    <section id="sobre-mi" class="sobre-mi">
         <div class="container">
-            <h2>Mi Trayectoria</h2>
+            <div class="section-title">
+                <h2>Sobre Mi Perfil</h2>
+                <div class="underline"></div>
+            </div>
             <div class="trayectoria-contenido">
-                <p>Tengo <strong>20 años</strong> y una trayectoria técnica híbrida. Mi formación comenzó con el <strong>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</strong>, donde adquirí una base profunda en sistemas, hardware e infraestructura.</p>
+                <p>Soy un Desarrollador Full Stack con un perfil técnico híbrido. Mi formación técnica comenzó desde la base (Sistemas e Infraestructura), lo que me permite entender el software no solo a nivel de código, sino desde cómo interactúa con el servidor, la red y la base de datos.</p>
                 
-                <p>Al finalizar el grado medio, realicé mis <strong>prácticas profesionales en Soltel (Sevilla)</strong>, obteniendo mi primer contacto real con el sector. Posteriormente, reforcé mi perfil con un curso intensivo de <strong>750 horas en Desarrollo de Aplicaciones Web y Móviles</strong> del SEPE.</p>
+                <p>Actualmente curso <strong>Desarrollo de Aplicaciones Web (DAW)</strong> y compagino mis estudios con el desarrollo integral de sistemas corporativos como mi proyecto actual, <strong>"FOODIMENTAL"</strong>, donde construyo desde la arquitectura de base de datos SQL hasta la interfaz dinámica en React.</p>
                 
-                <p>Actualmente, curso el segundo año de <strong>Desarrollo de Aplicaciones Web (DAW) en MEDAC</strong>. Mi objetivo es realizar mis prácticas en (Marzo-Mayo), uniendo mi experiencia previa en sistemas con mi pasión por el desarrollo de productos digitales modernos.</p>
+                <p>Me apasionan las buenas prácticas (SOLID, TDD) y sigo formándome continuamente en tecnologías Cloud y DevOps (Docker, AWS) para ofrecer soluciones robustas y seguras.</p>
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section id="proyectos" class="proyectos">
         <div class="container">
-            <h2>Habilidades Técnicas</h2>
+            <div class="section-title">
+                <h2>Proyectos Destacados</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="proyectos-grid">
+                <div class="proyecto-card">
+                    <div class="proyecto-content">
+                        <span class="proyecto-badge">En Desarrollo</span>
+                        <h3>FOODIMENTAL</h3>
+                        <p>Sistema de Gestión Integrado para entorno corporativo. Desarrollo integral desde cero.</p>
+                        <div class="tech-stack-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>SQL Server</span>
+                        </div>
+                        <ul class="proyecto-features">
+                            <li><i class="fas fa-check"></i> Arquitectura de base de datos SQL normalizada.</li>
+                            <li><i class="fas fa-check"></i> Desarrollo de API RESTful.</li>
+                            <li><i class="fas fa-check"></i> Interfaz dinámica y responsiva (Modern UI).</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Stack Tecnológico</h2>
+                <div class="underline"></div>
+            </div>
             <div class="skills-grid">
                 <div class="card">
-                    <div class="icon">🖥️</div>
-                    <h3>Sistemas e Infraestructura</h3>
-                    <p>Mantenimiento de hardware, entornos virtuales en <strong>VirtualBox/VMware</strong> y simulación de redes en <strong>Packet Tracer</strong>.</p>
+                    <i class="fas fa-server icon"></i>
+                    <h3>Backend</h3>
+                    <p>Java, Spring Boot, Node.js, Express. Implementación de APIs y lógica de negocio.</p>
                 </div>
-                
                 <div class="card">
-                    <div class="icon">⚙️</div>
-                    <h3>Backend & BBDD</h3>
-                    <p>Desarrollo en <strong>Java y PHP</strong>. Diseño y administración de bases de datos con <strong>MySQL</strong>.</p>
+                    <i class="fas fa-laptop-code icon"></i>
+                    <h3>Frontend</h3>
+                    <p>React (Vite), JavaScript (ES6+), HTML5, CSS3. Diseño de interfaces dinámicas.</p>
                 </div>
+                <div class="card">
+                    <i class="fas fa-database icon"></i>
+                    <h3>Bases de Datos</h3>
+                    <p>SQL Server, MySQL. Diseño de integridad referencial y procedimientos.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cloud icon"></i>
+                    <h3>DevOps & Cloud</h3>
+                    <p>Git/GitHub, Docker, Fundamentos de AWS (Amazon S3, EC2), Arquitectura Linux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="card">
-                    <div class="icon">🎨</div>
-                    <h3>Frontend & UI</h3>
-                    <p>Maquetación con <strong>HTML5 y CSS3</strong>. Diseño responsivo y fundamentos de <strong>JavaScript</strong>.</p>
-                </div>
-
-                <div class="card">
-                    <div class="icon">🚀</div>
-                    <h3>Herramientas & DevOps</h3>
-                    <p>Control de versiones con <strong>Git y GitHub</strong>. Gestión de proyectos en VS Code y despliegue web.</p>
-                </div>
+    <section id="certificaciones" class="certificaciones">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certificaciones Recientes</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-item"><i class="fas fa-certificate"></i> EF SET English Certificate B2 Upper Intermediate</div>
+                <div class="cert-item"><i class="fas fa-certificate"></i> Docker para desarrolladores (OpenWebinars)</div>
+                <div class="cert-item"><i class="fas fa-certificate"></i> JavaScript Essentials 1 (Cisco)</div>
+                <div class="cert-item"><i class="fas fa-certificate"></i> Principios SOLID y Patrones de Diseño (OpenWebinars)</div>
+                <div class="cert-item"><i class="fas fa-certificate"></i> AWS Cloud Quest: Cloud Practitioner (AWS)</div>
+                <div class="cert-item"><i class="fas fa-certificate"></i> Test-Driven Development - TDD (OpenWebinars)</div>
             </div>
         </div>
     </section>
 
     <footer id="contacto">
         <div class="container">
-            <h2>Contacto</h2>
-            <p>Disponible para prácticas FCT (Marzo - Mayo 2026).</p>
-            <p>📧 tiradogonzalez567@gmail.com</p>
-            <p>📍 Sevilla, España</p>
+            <h2>¿Hablamos?</h2>
+            <p>Actualmente abierto a oportunidades laborales y prácticas FCT.</p>
+            <div class="contact-info">
+                <a href="mailto:tiradogonzalez567@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> tiradogonzalez567@gmail.com</a>
+                <a href="https://www.linkedin.com/in/antonio-tirado7/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <p class="copyright">© 2026 Antonio Tirado. Diseñado y desarrollado con código limpio.</p>
         </div>
     </footer>
 
