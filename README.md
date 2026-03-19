@@ -89,23 +89,12 @@ He validado mis habilidades a través de un aprendizaje continuo:
 
 ---
 
-## 📈 Estadísticas de GitHub (¡Haciendo las cosas dinámicas!)
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=antoniotiradog05&show_icons=true&locale=es&theme=radical&hide_border=true&count_private=true" alt="Estadísticas de Antonio Tirado" />
-</p>
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=antoniotiradog05&layout=compact&theme=radical&hide_border=true&count_private=true&langs_count=10" alt="Lenguajes más usados por Antonio Tirado" />
-</p>
-
----
-
 ## 📫 Conecta conmigo
 
 ¡Estoy listo para mi próximo desafío! Si buscas un desarrollador Junior con una visión integral, hablemos.
 
-* [**LinkedIn**](https://linkedin.com/in/antonio-tirado7/) (Mi perfil profesional)
-* [**Portafolio Web**](https://antoniotiradog05.github.io/web-portfolio-antonio/) (Ver mis proyectos en acción)
+* [**LinkedIn**](https://linkedin.com/in/antonio-tirado7/)
+* [**Portafolio Web**](https://antoniotiradog05.github.io/web-portfolio-antonio/)
 
 ---
 
