@@ -3,141 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio Tirado | Junior Full Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Antonio Tirado | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c8b9f6a56.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">AT.</div>
-            <ul class="nav-links">
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certificaciones">Certificaciones</a></li>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">AT.</div>
+    <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificaciones">Certificaciones</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
+        <h1 class="fade-in">Full Stack Developer</h1>
+        <h2 class="subtitle fade-in-delay">Node.js · React · Java · Spring Boot</h2>
+        <p class="hero-text fade-in-delay2">
+            Desarrollo software completo: desde la arquitectura de base de datos y APIs seguras 
+            hasta interfaces modernas en React. Experiencia real construyendo sistemas corporativos en producción.
+        </p>
+
+        <div class="hero-buttons fade-in-delay3">
+            <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+            <a href="https://linkedin.com/in/antonio-tirado7" target="_blank" class="btn-secondary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- SOBRE MI -->
+<section id="sobre-mi" class="section">
+    <h2 class="section-title">Sobre mí</h2>
+    <p class="section-text">
+        Soy un Full Stack Developer con una base sólida en sistemas e infraestructura (SMR), lo que me permite 
+        entender el software desde el servidor hasta la interfaz.  
+        Me especializo en APIs seguras, bases de datos relacionales complejas y despliegues reales con Docker, Linux y Nginx.  
+        Busco mi primera oportunidad profesional aportando proyectos reales y experiencia práctica en producción.
+    </p>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="section">
+    <h2 class="section-title">Proyectos Destacados</h2>
+
+    <div class="projects-grid">
+
+        <!-- FOODIMENTAL -->
+        <div class="project-card">
+            <span class="badge">Proyecto Empresarial</span>
+            <h3>Foodimental App v2</h3>
+            <p>Sistema de gestión industrial desarrollado durante mis prácticas profesionales.</p>
+
+            <ul class="project-list">
+                <li>Base de datos con 23 tablas, triggers y procedimientos</li>
+                <li>API REST con RBAC, JWT, Helmet y Rate Limiting</li>
+                <li>23 pantallas en React (Vite)</li>
+                <li>Despliegue productivo con Nginx + PM2</li>
             </ul>
-        </nav>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <p class="tagline">Hola, soy Antonio Tirado 👋</p>
-                <h1>Junior Full Stack Developer</h1>
-                <h2 class="subtitle">Backend Java (Spring Boot) | Frontend Web (React)</h2>
-                <p class="bio-short">Desarrollador con mentalidad técnica sólida y base en sistemas. Aplicando principios Clean Code y diseño de arquitecturas escalables.</p>
-                <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
-                    <a href="https://www.linkedin.com/in/antonio-tirado7/" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <section id="sobre-mi" class="sobre-mi">
-        <div class="container">
-            <div class="section-title">
-                <h2>Sobre Mi Perfil</h2>
-                <div class="underline"></div>
+            <div class="tech-tags">
+                <span>Node.js</span><span>React</span><span>MySQL</span><span>Docker</span><span>Nginx</span>
             </div>
-            <div class="trayectoria-contenido">
-                <p>Soy un Desarrollador Full Stack con un perfil técnico híbrido. Mi formación técnica comenzó desde la base (Sistemas e Infraestructura), lo que me permite entender el software no solo a nivel de código, sino desde cómo interactúa con el servidor, la red y la base de datos.</p>
-                
-                <p>Actualmente curso <strong>Desarrollo de Aplicaciones Web (DAW)</strong> y compagino mis estudios con el desarrollo integral de sistemas corporativos como mi proyecto actual, <strong>"FOODIMENTAL"</strong>, donde construyo desde la arquitectura de base de datos SQL hasta la interfaz dinámica en React.</p>
-                
-                <p>Me apasionan las buenas prácticas (SOLID, TDD) y sigo formándome continuamente en tecnologías Cloud y DevOps (Docker, AWS) para ofrecer soluciones robustas y seguras.</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="proyectos" class="proyectos">
-        <div class="container">
-            <div class="section-title">
-                <h2>Proyectos Destacados</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="proyectos-grid">
-                <div class="proyecto-card">
-                    <div class="proyecto-content">
-                        <span class="proyecto-badge">En Desarrollo</span>
-                        <h3>FOODIMENTAL</h3>
-                        <p>Sistema de Gestión Integrado para entorno corporativo. Desarrollo integral desde cero.</p>
-                        <div class="tech-stack-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>SQL Server</span>
-                        </div>
-                        <ul class="proyecto-features">
-                            <li><i class="fas fa-check"></i> Arquitectura de base de datos SQL normalizada.</li>
-                            <li><i class="fas fa-check"></i> Desarrollo de API RESTful.</li>
-                            <li><i class="fas fa-check"></i> Interfaz dinámica y responsiva (Modern UI).</li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
+            <a href="https://github.com/antoniotiradog05/foodimental-app" target="_blank" class="btn-link">
+                Ver documentación técnica →
+            </a>
         </div>
-    </section>
 
-    <section id="skills" class="skills bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h2>Stack Tecnológico</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="card">
-                    <i class="fas fa-server icon"></i>
-                    <h3>Backend</h3>
-                    <p>Java, Spring Boot, Node.js, Express. Implementación de APIs y lógica de negocio.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-laptop-code icon"></i>
-                    <h3>Frontend</h3>
-                    <p>React (Vite), JavaScript (ES6+), HTML5, CSS3. Diseño de interfaces dinámicas.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-database icon"></i>
-                    <h3>Bases de Datos</h3>
-                    <p>SQL Server, MySQL. Diseño de integridad referencial y procedimientos.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-cloud icon"></i>
-                    <h3>DevOps & Cloud</h3>
-                    <p>Git/GitHub, Docker, Fundamentos de AWS (Amazon S3, EC2), Arquitectura Linux.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- ANTIBULLAS -->
+        <div class="project-card">
+            <span class="badge">En Producción</span>
+            <h3>Antibullas</h3>
+            <p>PWA para itinerarios de Semana Santa en tiempo real.</p>
 
-    <section id="certificaciones" class="certificaciones">
-        <div class="container">
-            <div class="section-title">
-                <h2>Certificaciones Recientes</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="cert-grid">
-                <div class="cert-item"><i class="fas fa-certificate"></i> EF SET English Certificate B2 Upper Intermediate</div>
-                <div class="cert-item"><i class="fas fa-certificate"></i> Docker para desarrolladores (OpenWebinars)</div>
-                <div class="cert-item"><i class="fas fa-certificate"></i> JavaScript Essentials 1 (Cisco)</div>
-                <div class="cert-item"><i class="fas fa-certificate"></i> Principios SOLID y Patrones de Diseño (OpenWebinars)</div>
-                <div class="cert-item"><i class="fas fa-certificate"></i> AWS Cloud Quest: Cloud Practitioner (AWS)</div>
-                <div class="cert-item"><i class="fas fa-certificate"></i> Test-Driven Development - TDD (OpenWebinars)</div>
-            </div>
-        </div>
-    </section>
+            <ul class="project-list">
+                <li>Offline-first con Service Workers</li>
+                <li>Algoritmo propio de tiempos</li>
+                <li>Mapas interactivos con Leaflet</li>
+                <li>Despliegue en Netlify con dominio propio</li>
+            </ul>
 
-    <footer id="contacto">
-        <div class="container">
-            <h2>¿Hablamos?</h2>
-            <p>Actualmente abierto a oportunidades laborales.</p>
-            <div class="contact-info">
-                <a href="mailto:tiradogonzalez567@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> tiradogonzalez567@gmail.com</a>
-                <a href="https://www.linkedin.com/in/antonio-tirado7/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <div class="tech-tags">
+                <span>JavaScript</span><span>PWA</span><span>Leaflet</span><span>Netlify</span>
             </div>
-            <p class="copyright">© 2026 Antonio Tirado. Diseñado y desarrollado con código limpio.</p>
+
+            <a href="https://antibullas.com" target="_blank" class="btn-link">
+                Ver proyecto →
+            </a>
         </div>
-    </footer>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2 class="section-title">Stack Tecnológico</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card"><i class="fas fa-server"></i><h3>Backend</h3><p>Node.js, Express, Java, Spring Boot</p></div>
+        <div class="skill-card"><i class="fas fa-laptop-code"></i><h3>Frontend</h3><p>React, JS ES6+, HTML, CSS</p></div>
+        <div class="skill-card"><i class="fas fa-database"></i><h3>Bases de Datos</h3><p>MySQL, SQL Server</p></div>
+        <div class="skill-card"><i class="fas fa-cloud"></i><h3>Infraestructura</h3><p>Docker, Linux, Nginx, AWS</p></div>
+    </div>
+</section>
+
+<!-- CERTIFICACIONES -->
+<section id="certificaciones" class="section">
+    <h2 class="section-title">Certificaciones</h2>
+
+    <div class="cert-grid">
+        <div class="cert-item"><i class="fas fa-certificate"></i> AWS Cloud Quest: Cloud Practitioner</div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> Docker para desarrolladores</div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> SOLID y patrones de diseño</div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> Test-Driven Development (TDD)</div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> SQL Server Avanzado</div>
+        <div class="cert-item"><i class="fas fa-certificate"></i> EF SET English B2</div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>¿Hablamos?</p>
+    <a href="mailto:tiradogonzalez567@gmail.com" class="footer-link">
+        <i class="fas fa-envelope"></i> tiradogonzalez567@gmail.com
+    </a>
+    <p class="copy">© 2026 Antonio Tirado — Full Stack Developer</p>
+</footer>
 
 </body>
 </html>
