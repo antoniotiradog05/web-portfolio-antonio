@@ -108,6 +108,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  width: 100%;
 }
 
 .hero-left {
@@ -191,8 +192,9 @@ body {
   width: 320px;
   height: 320px;
   border-radius: 50%;
+  /* Degradado de marcador de posición. Cuando tengas tu foto usa: */
+  /* background: url('ruta-a-tu-foto.jpg') center/cover no-repeat; */
   background: linear-gradient(135deg, var(--bg-soft), var(--primary-light));
-  /* Si tienes foto, cambia el background por: background: url('tu-foto.jpg') center/cover; */
   box-shadow: var(--shadow);
   border: 3px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -214,6 +216,7 @@ body {
 
 .section-container {
   max-width: var(--max-width);
+  width: 100%;
 }
 
 .section-title {
@@ -267,12 +270,15 @@ body {
   margin-bottom: 20px;
   color: var(--text-main);
   opacity: 0.9;
+  padding-left: 20px; /* Indentación añadida para las viñetas */
 }
 
 .project-link {
   color: var(--primary-light);
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 /* SKILLS */
@@ -297,6 +303,17 @@ body {
   transform: translateY(-4px);
 }
 
+.skill-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: var(--primary-light);
+}
+
+.skill-card p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
 /* CONTACTO */
 #contacto .btn-primary {
   margin-top: 20px;
@@ -309,6 +326,8 @@ body {
   padding: 70px 0;
   color: var(--text-muted);
   font-size: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 50px;
 }
 
 /* RESPONSIVE */
@@ -351,5 +370,17 @@ body {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  
+  .section {
+    padding: 100px 20px;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .project-card {
+    padding: 30px;
   }
 }
