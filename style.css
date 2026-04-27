@@ -104,6 +104,20 @@ body {
 .hero-container {
   max-width: var(--max-width);
   padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-hello {
@@ -170,6 +184,25 @@ body {
 
 .btn-secondary:hover {
   background: var(--glass-strong);
+}
+
+/* HERO PHOTO Y ANIMACIÓN */
+.hero-photo {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--bg-soft), var(--primary-light));
+  /* Si tienes foto, cambia el background por: background: url('tu-foto.jpg') center/cover; */
+  box-shadow: var(--shadow);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
 /* SECTIONS */
@@ -267,6 +300,7 @@ body {
 /* CONTACTO */
 #contacto .btn-primary {
   margin-top: 20px;
+  display: inline-block;
 }
 
 /* FOOTER */
@@ -279,9 +313,43 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+  .hero-container { 
+    flex-direction: column; 
+    text-align: center; 
+    padding-top: 40px;
+  }
+  
+  .hero-right {
+    margin-top: 40px;
+  }
+
+  .hero-photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-buttons { 
+    justify-content: center; 
+  }
+
   .hero-name { font-size: 3.4rem; }
   .hero-role { font-size: 1.4rem; }
-  .hero-desc { font-size: 1.1rem; }
+  .hero-desc { font-size: 1.1rem; margin-left: auto; margin-right: auto; }
+  
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
