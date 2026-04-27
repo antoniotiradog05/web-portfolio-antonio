@@ -7,8 +7,9 @@
 
 :root {
   --bg: #0a0a0c;
-  --bg-glass: rgba(255, 255, 255, 0.06);
-  --bg-glass-strong: rgba(255, 255, 255, 0.12);
+  --bg-soft: #111216;
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-strong: rgba(255, 255, 255, 0.12);
   --text-main: #f5f5f7;
   --text-muted: #b3b3b8;
   --primary: #4f7cff;
@@ -95,7 +96,7 @@ body {
 }
 
 .hero-name {
-  font-size: 4.2rem;
+  font-size: 4.4rem;
   font-weight: 800;
   background: linear-gradient(120deg, var(--primary-light), var(--accent));
   -webkit-background-clip: text;
@@ -104,14 +105,14 @@ body {
 }
 
 .hero-role {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: var(--text-muted);
   margin-bottom: 25px;
 }
 
 .hero-desc {
-  font-size: 1.2rem;
-  max-width: 700px;
+  font-size: 1.25rem;
+  max-width: 750px;
   opacity: 0.9;
   margin-bottom: 40px;
 }
@@ -143,18 +144,18 @@ body {
 }
 
 .btn-secondary {
-  background: var(--bg-glass);
+  background: var(--glass);
   border: 1px solid rgba(255,255,255,0.15);
   color: var(--text-main);
 }
 
 .btn-secondary:hover {
-  background: var(--bg-glass-strong);
+  background: var(--glass-strong);
 }
 
 /* SECTIONS */
 .section {
-  padding: 120px 40px;
+  padding: 140px 40px;
   display: flex;
   justify-content: center;
 }
@@ -164,7 +165,7 @@ body {
 }
 
 .section-title {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin-bottom: 25px;
   background: linear-gradient(120deg, var(--primary-light), var(--accent));
   -webkit-background-clip: text;
@@ -172,22 +173,22 @@ body {
 }
 
 .section-text {
-  font-size: 1.2rem;
-  max-width: 800px;
+  font-size: 1.25rem;
+  max-width: 850px;
   opacity: 0.9;
 }
 
 /* PROJECTS */
 .projects-grid {
-  margin-top: 50px;
+  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  gap: 40px;
+  gap: 45px;
 }
 
 .project-card {
-  background: var(--bg-glass);
-  padding: 40px;
+  background: var(--glass);
+  padding: 45px;
   border-radius: var(--radius);
   border: 1px solid rgba(255,255,255,0.08);
   backdrop-filter: blur(14px);
@@ -197,11 +198,11 @@ body {
 
 .project-card:hover {
   transform: translateY(-6px);
-  background: var(--bg-glass-strong);
+  background: var(--glass-strong);
 }
 
 .project-card h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-bottom: 12px;
 }
 
@@ -224,15 +225,15 @@ body {
 
 /* SKILLS */
 .skills-grid {
-  margin-top: 40px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  gap: 35px;
 }
 
 .skill-card {
-  background: var(--bg-glass);
-  padding: 30px;
+  background: var(--glass);
+  padding: 35px;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255,255,255,0.08);
   backdrop-filter: blur(14px);
@@ -240,7 +241,7 @@ body {
 }
 
 .skill-card:hover {
-  background: var(--bg-glass-strong);
+  background: var(--glass-strong);
   transform: translateY(-4px);
 }
 
@@ -252,7 +253,7 @@ body {
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 60px 0;
+  padding: 70px 0;
   color: var(--text-muted);
   font-size: 1rem;
 }
