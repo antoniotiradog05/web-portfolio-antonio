@@ -495,5 +495,56 @@ footer {
   .skills-grid,
   .cert-grid {
     grid-template-columns: minmax(0, 1fr);
+
+
+    /* LAYOUT AMPLIO Y PROFESIONAL */
+.layout {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* SEPARACIÓN ENTRE SECCIONES */
+.section {
+  margin-top: 90px;
+}
+
+/* TITULARES MÁS GRANDES Y CON PRESENCIA */
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+/* CARDS MÁS GRANDES Y ESPACIADAS */
+.project-card,
+.section-inner {
+  padding: 40px 38px;
+  border-radius: 20px;
+}
+
+/* GRID DE PROYECTOS MÁS AMPLIO */
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 40px;
+}
+
+/* GRID DE SKILLS MÁS RESPIRADO */
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* GRID DE CERTIFICACIONES MÁS LIMPIO */
+.cert-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* HERO MÁS ANCHO Y CON MÁS AIRE */
+.hero-content {
+  max-width: 900px;
+  padding: 60px 55px;
+}
+
   }
 }
