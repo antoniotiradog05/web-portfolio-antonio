@@ -99,5 +99,5 @@ He validado mis habilidades a través de un aprendizaje continuo:
 ---
 
 <p align="center">
-  Hecho con ❤️ por Antonio Tirado. © 2026.
+  Hecho por Antonio Tirado. © 2026.
 </p>
