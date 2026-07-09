@@ -1029,6 +1029,71 @@
             <a href="https://antibullas.com" target="_blank" style="color:var(--acid);font-family:var(--mono);font-size:12px;margin-top:8px;display:inline-block;">Ver proyecto en producción →</a>
           </div>
         </div>
+
+        <!-- FinTrack -->
+        <div class="project-card r">
+          <div class="project-art" id="art-fintrack"></div>
+          <div class="project-meta">
+            <h3>💰 FinTrack</h3>
+            <p>Gestor de finanzas personales full-stack. Backend en Spring Boot con JWT y MySQL, frontend en React con dashboards de Recharts. Dockerizado de principio a fin.</p>
+            <div class="tech-tags">
+              <span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span><span>Docker</span><span>JUnit5</span>
+            </div>
+            <a href="https://github.com/antoniotiradog05/FinTrack" target="_blank" style="color:var(--acid);font-family:var(--mono);font-size:12px;margin-top:8px;display:inline-block;">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <!-- SkillBridge -->
+        <div class="project-card r">
+          <div class="project-art" id="art-skillbridge"></div>
+          <div class="project-meta">
+            <h3>🌉 SkillBridge</h3>
+            <p>Plataforma que conecta estudiantes con mentores y genera roadmaps de aprendizaje con IA. Frontend en React con Framer Motion, backend en Node/Express integrado con la API de OpenAI.</p>
+            <div class="tech-tags">
+              <span>React</span><span>Node.js</span><span>OpenAI API</span><span>Framer Motion</span>
+            </div>
+            <a href="https://github.com/antoniotiradog05/SkillBridge" target="_blank" style="color:var(--acid);font-family:var(--mono);font-size:12px;margin-top:8px;display:inline-block;">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <!-- Acortador-URL -->
+        <div class="project-card r">
+          <div class="project-art" id="art-acortador"></div>
+          <div class="project-meta">
+            <h3>🔗 Acortador-URL</h3>
+            <p>Acortador de URLs con Clean Architecture. Backend con Node/Express y Prisma, frontend en React con Tailwind. Incluye analíticas de clics y hash de IPs por privacidad.</p>
+            <div class="tech-tags">
+              <span>Node.js</span><span>Prisma</span><span>React</span><span>Tailwind</span><span>Chart.js</span>
+            </div>
+            <a href="https://github.com/antoniotiradog05/Acortador-URL" target="_blank" style="color:var(--acid);font-family:var(--mono);font-size:12px;margin-top:8px;display:inline-block;">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <!-- FacturaYa -->
+        <div class="project-card r">
+          <div class="project-art" id="art-facturaya"></div>
+          <div class="project-meta">
+            <h3>🧾 FacturaYa</h3>
+            <p>Suite de facturación para autónomos. Generación de PDFs, dashboard financiero y cálculo automático de Modelos 303/130 (IVA/IRPF). Node/Express + SQLite.</p>
+            <div class="tech-tags">
+              <span>Node.js</span><span>Express</span><span>SQLite</span><span>PDF</span><span>GSAP</span>
+            </div>
+            <a href="https://github.com/antoniotiradog05/FacturaYa" target="_blank" style="color:var(--acid);font-family:var(--mono);font-size:12px;margin-top:8px;display:inline-block;">Ver repositorio →</a>
+          </div>
+        </div>
+
+        <!-- AsistenteCripto -->
+        <div class="project-card r">
+          <div class="project-art" id="art-asistentecripto"></div>
+          <div class="project-meta">
+            <h3>📈 AsistenteCripto</h3>
+            <p>Bot en Python que analiza las 10 principales criptomonedas con indicadores técnicos (RSI, MACD, Bandas de Bollinger) y los traduce a lenguaje sencillo para el usuario.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>RSI</span><span>MACD</span><span>Data Analysis</span>
+            </div>
+            <a href="https://github.com/antoniotiradog05/AsistenteCripto" target="_blank" style="color:var(--acid);font-family:var(--mono);font-size:12px;margin-top:8px;display:inline-block;">Ver repositorio →</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1137,11 +1202,103 @@
           </path>
           <text x="200" y="228" text-anchor="middle" fill="#9aa0a4" font-family="JetBrains Mono" font-size="9">PWA · Leaflet · offline-first</text>
         </svg>`;
+      } else if (type === 'fintrack') {
+        return `<svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="240" fill="#0e1014"/>
+          <!-- Bar chart -->
+          <rect x="70" y="140" width="30" height="60" fill="rgba(191,255,58,.15)" stroke="#bfff3a" stroke-width="1.5"/>
+          <rect x="115" y="100" width="30" height="100" fill="rgba(191,255,58,.15)" stroke="#bfff3a" stroke-width="1.5"/>
+          <rect x="160" y="60" width="30" height="140" fill="rgba(191,255,58,.15)" stroke="#bfff3a" stroke-width="1.5"/>
+          <rect x="205" y="90" width="30" height="110" fill="rgba(191,255,58,.15)" stroke="#bfff3a" stroke-width="1.5"/>
+          <!-- Trend line -->
+          <path d="M85 150 L130 110 L175 75 L220 100" fill="none" stroke="#5cf2ff" stroke-width="2">
+            <animate attributeName="stroke-dasharray" values="0,300;300,300" dur="1.5s" repeatCount="indefinite"/>
+          </path>
+          <circle cx="220" cy="100" r="4" fill="#5cf2ff"/>
+          <!-- Coin -->
+          <circle cx="300" cy="80" r="22" fill="none" stroke="#ffd23a" stroke-width="1.5"/>
+          <text x="300" y="86" text-anchor="middle" fill="#ffd23a" font-family="JetBrains Mono" font-size="14">€</text>
+          <text x="200" y="228" text-anchor="middle" fill="#9aa0a4" font-family="JetBrains Mono" font-size="9">Spring Boot · JWT · MySQL</text>
+        </svg>`;
+      } else if (type === 'skillbridge') {
+        return `<svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="240" fill="#0e1014"/>
+          <!-- Two nodes connected by a bridge -->
+          <circle cx="110" cy="120" r="34" fill="rgba(192,132,255,.08)" stroke="#c084ff" stroke-width="1.5"/>
+          <text x="110" y="125" text-anchor="middle" fill="#c084ff" font-family="JetBrains Mono" font-size="9">student</text>
+          <circle cx="290" cy="120" r="34" fill="rgba(191,255,58,.08)" stroke="#bfff3a" stroke-width="1.5"/>
+          <text x="290" y="125" text-anchor="middle" fill="#bfff3a" font-family="JetBrains Mono" font-size="9">mentor</text>
+          <path d="M144 120 L256 120" stroke="#5cf2ff" stroke-width="1.5" stroke-dasharray="5 5">
+            <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.2s" repeatCount="indefinite"/>
+          </path>
+          <circle cx="200" cy="120" r="10" fill="none" stroke="#5cf2ff" stroke-width="1.5">
+            <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <text x="200" y="124" text-anchor="middle" fill="#5cf2ff" font-family="JetBrains Mono" font-size="8">AI</text>
+          <text x="200" y="228" text-anchor="middle" fill="#9aa0a4" font-family="JetBrains Mono" font-size="9">React · Node.js · OpenAI API</text>
+        </svg>`;
+      } else if (type === 'acortador') {
+        return `<svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="240" fill="#0e1014"/>
+          <!-- Long URL shrinking into short link -->
+          <rect x="50" y="60" width="130" height="26" rx="13" fill="none" stroke="#ff3d57" stroke-width="1.5"/>
+          <text x="115" y="78" text-anchor="middle" fill="#ff3d57" font-family="JetBrains Mono" font-size="9">/muy/larga/url...</text>
+          <path d="M180 73 L230 73" stroke="#bfff3a" stroke-width="1.5">
+            <animate attributeName="stroke-dasharray" values="0,60;60,60" dur="1.4s" repeatCount="indefinite"/>
+          </path>
+          <rect x="235" y="55" width="90" height="36" rx="18" fill="rgba(191,255,58,.1)" stroke="#bfff3a" stroke-width="1.5"/>
+          <text x="280" y="78" text-anchor="middle" fill="#bfff3a" font-family="JetBrains Mono" font-size="10">ac.io/x9k</text>
+          <!-- Click analytics bars -->
+          <rect x="90" y="170" width="14" height="30" fill="rgba(92,242,255,.2)" stroke="#5cf2ff" stroke-width="1"/>
+          <rect x="115" y="150" width="14" height="50" fill="rgba(92,242,255,.2)" stroke="#5cf2ff" stroke-width="1"/>
+          <rect x="140" y="160" width="14" height="40" fill="rgba(92,242,255,.2)" stroke="#5cf2ff" stroke-width="1"/>
+          <rect x="165" y="135" width="14" height="65" fill="rgba(92,242,255,.2)" stroke="#5cf2ff" stroke-width="1"/>
+          <text x="280" y="228" text-anchor="middle" fill="#9aa0a4" font-family="JetBrains Mono" font-size="9">Clean Architecture · Prisma</text>
+        </svg>`;
+      } else if (type === 'facturaya') {
+        return `<svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="240" fill="#0e1014"/>
+          <!-- Invoice document -->
+          <rect x="130" y="40" width="140" height="170" rx="6" fill="rgba(255,210,58,.05)" stroke="#ffd23a" stroke-width="1.5"/>
+          <line x1="150" y1="70" x2="250" y2="70" stroke="#ffd23a" stroke-width="1.5" opacity="0.6"/>
+          <line x1="150" y1="90" x2="230" y2="90" stroke="#ffd23a" stroke-width="1" opacity="0.4"/>
+          <line x1="150" y1="108" x2="240" y2="108" stroke="#ffd23a" stroke-width="1" opacity="0.4"/>
+          <line x1="150" y1="126" x2="210" y2="126" stroke="#ffd23a" stroke-width="1" opacity="0.4"/>
+          <!-- Checkmark stamp -->
+          <circle cx="220" cy="165" r="26" fill="rgba(191,255,58,.08)" stroke="#bfff3a" stroke-width="1.5">
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M208 165 L217 174 L233 155" fill="none" stroke="#bfff3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="200" y="228" text-anchor="middle" fill="#9aa0a4" font-family="JetBrains Mono" font-size="9">IVA/IRPF · PDF · Dashboard</text>
+        </svg>`;
+      } else if (type === 'asistentecripto') {
+        return `<svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="240" fill="#0e1014"/>
+          <!-- Candlestick chart -->
+          <line x1="100" y1="70" x2="100" y2="160" stroke="#ff3d57" stroke-width="1.5"/>
+          <rect x="92" y="90" width="16" height="45" fill="rgba(255,61,87,.2)" stroke="#ff3d57" stroke-width="1.5"/>
+          <line x1="145" y1="60" x2="145" y2="150" stroke="#bfff3a" stroke-width="1.5"/>
+          <rect x="137" y="75" width="16" height="55" fill="rgba(191,255,58,.2)" stroke="#bfff3a" stroke-width="1.5"/>
+          <line x1="190" y1="80" x2="190" y2="170" stroke="#bfff3a" stroke-width="1.5"/>
+          <rect x="182" y="100" width="16" height="50" fill="rgba(191,255,58,.2)" stroke="#bfff3a" stroke-width="1.5"/>
+          <line x1="235" y1="90" x2="235" y2="180" stroke="#ff3d57" stroke-width="1.5"/>
+          <rect x="227" y="110" width="16" height="40" fill="rgba(255,61,87,.2)" stroke="#ff3d57" stroke-width="1.5"/>
+          <!-- RSI line -->
+          <path d="M80 200 L140 190 L190 205 L240 185 L290 195" fill="none" stroke="#5cf2ff" stroke-width="1.5" stroke-dasharray="4 4">
+            <animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1s" repeatCount="indefinite"/>
+          </path>
+          <text x="200" y="228" text-anchor="middle" fill="#9aa0a4" font-family="JetBrains Mono" font-size="9">RSI · MACD · Bollinger Bands</text>
+        </svg>`;
       }
     }
 
     document.getElementById('art-foodimental').innerHTML = createSVG('foodimental');
     document.getElementById('art-antibullas').innerHTML = createSVG('antibullas');
+    document.getElementById('art-fintrack').innerHTML = createSVG('fintrack');
+    document.getElementById('art-skillbridge').innerHTML = createSVG('skillbridge');
+    document.getElementById('art-acortador').innerHTML = createSVG('acortador');
+    document.getElementById('art-facturaya').innerHTML = createSVG('facturaya');
+    document.getElementById('art-asistentecripto').innerHTML = createSVG('asistentecripto');
 
     // ========== MARQUEE ==========
     const mqItems = [
