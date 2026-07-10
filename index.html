@@ -764,6 +764,145 @@
       color: var(--ink-2);
     }
 
+    /* ========== EXPERIENCE / EDUCATION TIMELINE ========== */
+    .timeline {
+      position: relative;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 21px;
+      top: 10px;
+      bottom: 10px;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--line-2), var(--line) 90%, transparent);
+    }
+    .tl-entry {
+      position: relative;
+      padding: 0 0 56px 64px;
+    }
+    .tl-entry:last-child {
+      padding-bottom: 0;
+    }
+    .tl-node {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--bg-2);
+      border: 1px solid var(--line-2);
+      display: grid;
+      place-items: center;
+      font-family: var(--mono);
+      font-size: 15px;
+      color: var(--acid);
+      z-index: 2;
+    }
+    .tl-node i {
+      font-size: 15px;
+    }
+    .tl-card {
+      background: var(--bg-2);
+      border: 1px solid var(--line-2);
+      border-radius: var(--radius-sm);
+      padding: 26px 30px;
+      transition: var(--transition);
+    }
+    .tl-card:hover {
+      border-color: var(--acid);
+      background: rgba(191, 255, 58, .02);
+      transform: translateY(-3px);
+    }
+    .tl-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+    .tl-org {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .tl-org span {
+      color: var(--ink-3);
+      font-weight: 500;
+    }
+    .tl-place {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--ink-3);
+      margin-top: 4px;
+    }
+    .tl-badge {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--acid);
+      border: 1px solid rgba(191, 255, 58, .3);
+      background: rgba(191, 255, 58, .06);
+      padding: 5px 10px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .tl-roles {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .tl-role {
+      position: relative;
+      padding-left: 20px;
+      border-left: 2px solid var(--line);
+    }
+    .tl-role.current {
+      border-left: 2px solid var(--acid);
+    }
+    .tl-role h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .tl-role .tl-dates {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--ink-3);
+      margin-top: 2px;
+    }
+    .tl-desc {
+      color: var(--ink-2);
+      line-height: 1.7;
+      margin-top: 14px;
+      font-size: 15px;
+    }
+    .tl-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .tl-skills span {
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 4px 10px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      color: var(--ink-2);
+    }
+    .tl-skills span.more {
+      color: var(--acid);
+      border-color: rgba(191, 255, 58, .25);
+    }
+
     /* ========== SKILLS ========== */
     .skills-grid {
       display: grid;
@@ -929,6 +1068,8 @@
       <a href="#top" class="brand"><span class="pip"></span><span class="name">AT.</span></a>
       <ul class="nav-links">
         <li><a href="#sobre-mi" class="on">Sobre mí</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#educacion">Educación</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -995,6 +1136,161 @@
       <p class="section-text r">Tengo 20 años y construyo software desde cero. Mi formación en <strong>Sistemas Microinformáticos y Redes (SMR)</strong> me da una perspectiva diferente: entiendo el código como parte de una infraestructura, no como algo aislado.</p>
       <p class="section-text r">Me interesa la arquitectura de APIs, el diseño de bases de datos relacionales y hacer que las cosas funcionen <strong>en producción de verdad</strong>, no solo en localhost. Busco mi primer contrato como Desarrollador Junior.</p>
       <p class="section-text r">Stack actual: Node.js, Express, React (Vite), Java, Spring Boot, MySQL, Docker, Nginx, PM2, AWS. Aprendiendo TypeScript y testing con TDD.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experiencia" class="section">
+    <div class="section-container">
+      <h2 class="section-title r">Experiencia <em>profesional.</em></h2>
+      <p class="section-text r" style="margin-bottom:0;">Del soporte técnico al desarrollo full stack en producción — así ha sido mi recorrido hasta ahora.</p>
+
+      <div class="timeline">
+
+        <!-- Foodimental -->
+        <div class="tl-entry r">
+          <div class="tl-node"><i class="fas fa-seedling"></i></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-org">Foodimental <span>· 5 meses</span></div>
+                <div class="tl-place">Sevilla, Andalucía, España · Presencial</div>
+              </div>
+              <span class="tl-badge">Actual</span>
+            </div>
+            <div class="tl-roles">
+              <div class="tl-role current">
+                <h4>Desarrollador Full Stack — Jornada completa</h4>
+                <div class="tl-dates">jun. 2026 – actualidad · 2 meses</div>
+              </div>
+              <div class="tl-role">
+                <h4>Desarrollador Full Stack — Contrato de formación</h4>
+                <div class="tl-dates">mar. 2026 – jun. 2026 · 4 meses</div>
+              </div>
+            </div>
+            <p class="tl-desc">Participación integral en el ciclo de vida de "Foodimental App", una solución corporativa orientada a la digitalización, trazabilidad de laboratorio y cumplimiento normativo. Responsable de traducir necesidades de negocio en funcionalidades reales.</p>
+            <div class="tl-skills">
+              <span>React.js</span><span>Node.js</span><span class="more">+13 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEP -->
+        <div class="tl-entry r">
+          <div class="tl-node"><i class="fas fa-code"></i></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-org">Desarrollador web <span>· ITEP Formación</span></div>
+                <div class="tl-place">Contrato de formación · Sevilla, Andalucía, España · Híbrido</div>
+              </div>
+            </div>
+            <div class="tl-roles">
+              <div class="tl-role">
+                <div class="tl-dates">feb. 2025 – mar. 2025 · 2 meses</div>
+              </div>
+            </div>
+            <div class="tl-skills">
+              <span>AWS</span><span>Arquitectura de sistemas</span><span class="more">+9 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SOLTEL -->
+        <div class="tl-entry r">
+          <div class="tl-node"><i class="fas fa-server"></i></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-org">Computer Technician <span>· SOLTEL SEVILLA</span></div>
+                <div class="tl-place">Contrato de formación · Sevilla, Andalucía, España · Presencial</div>
+              </div>
+            </div>
+            <div class="tl-roles">
+              <div class="tl-role">
+                <div class="tl-dates">sept. 2023 – ene. 2024 · 5 meses</div>
+              </div>
+            </div>
+            <p class="tl-desc">Soporte técnico a usuarios: diagnóstico y resolución de incidencias hardware y software. Mantenimiento y configuración básica de redes y equipos. Asistencia en la instalación y actualización de software.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="educacion" class="section">
+    <div class="section-container">
+      <h2 class="section-title r">Educación <em>y formación.</em></h2>
+      <p class="section-text r" style="margin-bottom:0;">Base técnica en redes, sistemas y desarrollo web — de FP Medio a FP Superior.</p>
+
+      <div class="timeline">
+
+        <!-- MEDAC -->
+        <div class="tl-entry r">
+          <div class="tl-node"><i class="fas fa-graduation-cap"></i></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-org">MEDAC</div>
+                <div class="tl-place">Ciclo Formativo de Grado Superior · Web/Multimedia Management and Webmaster</div>
+              </div>
+            </div>
+            <div class="tl-roles">
+              <div class="tl-role">
+                <div class="tl-dates">sept. 2024 – jun. 2026</div>
+              </div>
+            </div>
+            <div class="tl-skills">
+              <span>HTML</span><span>CSS</span><span class="more">+15 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEPE -->
+        <div class="tl-entry r">
+          <div class="tl-node"><i class="fas fa-laptop-code"></i></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-org">SEPE</div>
+                <div class="tl-place">Curso Desarrollo de Aplicaciones Web y Móvil (756h) · Computer Programming</div>
+              </div>
+            </div>
+            <div class="tl-roles">
+              <div class="tl-role">
+                <div class="tl-dates">sept. 2023 – mar. 2024</div>
+              </div>
+            </div>
+            <div class="tl-skills">
+              <span>Java</span><span>PHP</span><span class="more">+9 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IES Pino Montano -->
+        <div class="tl-entry r">
+          <div class="tl-node"><i class="fas fa-network-wired"></i></div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-org">IES Pino Montano</div>
+                <div class="tl-place">Ciclo Formativo de Grado Medio · Sistemas Microinformáticos y Redes</div>
+              </div>
+            </div>
+            <div class="tl-roles">
+              <div class="tl-role">
+                <div class="tl-dates">sept. 2021 – jun. 2023</div>
+              </div>
+            </div>
+            <div class="tl-skills">
+              <span>Operaciones de redes informáticas</span><span>Packet Tracer</span><span class="more">+11 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
